@@ -6,17 +6,25 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
+  "section_break_nqgx",
+  "vpo_doc",
+  "column_break_eyan",
   "full_name",
+  "column_break_zxqo",
+  "phone",
+  "section_break_iocc",
+  "column_break_dssr",
+  "codetax",
   "column_break_ndxu",
   "sex",
   "column_break_oqgr",
   "birth_day",
-  "section_break_nqgx",
-  "passport",
-  "column_break_dssr",
-  "rnokpp",
   "section_break_yxwf",
-  "phone"
+  "area_of_expertise",
+  "column_break_hqom",
+  "required_delivery",
+  "preferentials_category",
+  "signature_nzvx"
  ],
  "fields": [
   {
@@ -26,22 +34,15 @@
    "label": "\u041f\u0406\u0411"
   },
   {
-   "default": "\u0416\u0456\u043d\u043a\u0430",
    "fieldname": "sex",
    "fieldtype": "Select",
    "label": "\u0421\u0442\u0430\u0442\u044c",
-   "options": "\u0416\u0456\u043d\u043a\u0430\n\u0427\u043e\u043b\u043e\u0432\u0456\u043a"
+   "options": "\n\u0416\u0456\u043d\u043a\u0430\n\u0427\u043e\u043b\u043e\u0432\u0456\u043a"
   },
   {
    "fieldname": "birth_day",
    "fieldtype": "Date",
    "label": "\u0414\u0430\u0442\u0430 \u043d\u0430\u0440\u043e\u0434\u0436\u0435\u043d\u043d\u044f"
-  },
-  {
-   "description": "\u041f\u0430\u0441\u043f\u043e\u0440\u0442/ID \u043a\u0430\u0440\u0442\u043a\u0430/\u0441\u0432\u0456\u0434\u043e\u0446\u0442\u0432\u043e \u043f\u0440\u043e \u043d\u0430\u0440\u043e\u0434\u0436\u0435\u043d\u043d\u044f (\u0441\u0435\u0440\u0456\u044f, \u043d\u043e\u043c\u0435\u0440)",
-   "fieldname": "passport",
-   "fieldtype": "Data",
-   "label": "\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442"
   },
   {
    "fieldname": "column_break_ndxu",
@@ -60,25 +61,74 @@
    "fieldtype": "Column Break"
   },
   {
-   "description": "\u0406\u0434\u0435\u043d\u0442\u0438\u0444\u0456\u043a\u0430\u0446\u0456\u0439\u043d\u0438\u0439 \u043d\u043e\u043c\u0435\u0440",
-   "fieldname": "rnokpp",
-   "fieldtype": "Data",
-   "label": "\u0420\u041d\u041e\u041a\u041f\u041f"
-  },
-  {
    "fieldname": "section_break_yxwf",
    "fieldtype": "Section Break"
   },
   {
+   "description": "\u041a\u043e\u043d\u0442\u0430\u043a\u0442\u043d\u0438\u0439 \u043d\u043e\u043c\u0435\u0440 \u0442\u0435\u043b\u0435\u0444\u043e\u043d\u0443",
    "fieldname": "phone",
    "fieldtype": "Data",
    "label": "\u0422\u0435\u043b\u0435\u0444\u043e\u043d",
    "options": "Phone"
+  },
+  {
+   "fieldname": "vpo_doc",
+   "fieldtype": "Data",
+   "label": "\u2116 \u0412\u041f\u041e"
+  },
+  {
+   "fieldname": "section_break_iocc",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_hqom",
+   "fieldtype": "Column Break"
+  },
+  {
+   "description": "\u0406\u0434\u0435\u043d\u0442\u0438\u0444\u0456\u043a\u0430\u0446\u0456\u0439\u043d\u0438\u0439 \u043d\u043e\u043c\u0435\u0440",
+   "fieldname": "codetax",
+   "fieldtype": "Data",
+   "label": "\u0420\u041d\u041e\u041a\u041f\u041f"
+  },
+  {
+   "fieldname": "column_break_eyan",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "preferentials_category",
+   "fieldtype": "Table MultiSelect",
+   "label": "\u041f\u0456\u043b\u044c\u0433\u043e\u0432\u0430 \u043a\u0430\u0442\u0435\u0433\u043e\u0440\u0456\u044f",
+   "options": "AID Preferentials category"
+  },
+  {
+   "fieldname": "area_of_expertise",
+   "fieldtype": "Link",
+   "label": "\u0421\u0444\u0435\u0440\u0430 \u043f\u0440\u043e\u0444\u0435\u0441\u0456\u0439\u043d\u043e\u0457 \u0434\u0456\u044f\u043b\u044c\u043d\u043e\u0441\u0442\u0456",
+   "options": "AID Area of expertise"
+  },
+  {
+   "fieldname": "column_break_zxqo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "required_delivery",
+   "fieldtype": "Check",
+   "label": "\u041f\u043e\u0442\u0440\u0435\u0431\u0430 \u0443 \u0430\u0434\u0440\u0435\u0441\u043d\u0456\u0439 \u0434\u043e\u0441\u0442\u0430\u0432\u0446\u0456"
+  },
+  {
+   "fieldname": "signature_nzvx",
+   "fieldtype": "Signature"
   }
  ],
  "index_web_pages_for_search": 1,
- "links": [],
- "modified": "2024-01-23 22:41:07.434326",
+ "links": [
+  {
+   "link_doctype": "AID Help Transaction",
+   "link_fieldname": "customer"
+  }
+ ],
+ "modified": "2024-01-26 14:45:50.350048",
  "modified_by": "Administrator",
  "module": "Ukr Aid",
  "name": "AID Customer",

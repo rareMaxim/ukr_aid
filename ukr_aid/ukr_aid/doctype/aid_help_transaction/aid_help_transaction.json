@@ -1,0 +1,82 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-01-25 19:51:48.494786",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "date_transaction",
+  "column_break_yhuo",
+  "customer",
+  "section_break_ixdb",
+  "services",
+  "tab_dev_tab",
+  "full_name"
+ ],
+ "fields": [
+  {
+   "fieldname": "date_transaction",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "\u0414\u0430\u0442\u0430",
+   "reqd": 1
+  },
+  {
+   "fieldname": "services",
+   "fieldtype": "Table",
+   "label": "\u041d\u0430\u0434\u0430\u043d\u0456 \u043f\u043e\u0441\u043b\u0443\u0433\u0438",
+   "options": "AID Services Table"
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "\u0412\u0456\u0434\u0432\u0456\u0434\u0443\u0432\u0430\u0447",
+   "options": "AID Customer",
+   "search_index": 1
+  },
+  {
+   "fieldname": "column_break_yhuo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_ixdb",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "tab_dev_tab",
+   "fieldtype": "Tab Break",
+   "label": "Tab dev"
+  },
+  {
+   "fetch_from": "customer.full_name",
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "label": "\u0412\u0456\u0434\u0432\u0456\u0434\u0443\u0432\u0430\u0447"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-01-25 20:33:01.867604",
+ "modified_by": "Administrator",
+ "module": "Ukr Aid",
+ "name": "AID Help Transaction",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "full_name"
+}
